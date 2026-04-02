@@ -1,1 +1,142 @@
-/*# sourceMappingURL=style.css.map */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(200, 228, 255, 0.5411764706);
+}
+
+.box {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+}
+.box h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 16px;
+}
+.input-wrap input {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input-wrap input::-moz-placeholder {
+  color: #aaa;
+}
+.input-wrap input::placeholder {
+  color: #aaa;
+}
+.input-wrap input:focus {
+  border-color: #296dff;
+}
+.input-wrap .eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.input-wrap .eye-btn img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.input-wrap .eye-btn img:hover {
+  opacity: 1;
+}
+
+.bars {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.bars .bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: #e0e0e0;
+  transition: background 0.3s;
+}
+
+.strength-1 #bar1 {
+  background: #ff4d4d;
+}
+
+.strength-2 #bar1,
+.strength-2 #bar2 {
+  background: #ff9a3c;
+}
+
+.strength-3 #bar1,
+.strength-3 #bar2, .strength-3 #bar3 {
+  background: #f5c518;
+}
+
+.strength-4 #bar1, .strength-4 #bar2,
+.strength-4 #bar3, .strength-4 #bar4 {
+  background: #4caf50;
+}
+
+.strength-label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #aaa;
+  transition: color 0.3s;
+}
+.strength-label.weak {
+  color: #ff4d4d;
+}
+.strength-label.fair {
+  color: #ff9a3c;
+}
+.strength-label.good {
+  color: #f5c518;
+}
+.strength-label.strong {
+  color: #4caf50;
+}
+
+.tips {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  text-align: left;
+}
+.tips li {
+  font-size: 13px;
+  color: #aaa;
+  padding: 5px 0;
+  border-top: 1px solid #f0f0f0;
+  transition: color 0.2s;
+}
+.tips li.passed {
+  color: #ccc;
+  text-decoration: line-through;
+}/*# sourceMappingURL=style.css.map */
