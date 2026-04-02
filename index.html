@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Checker</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h2>Password Checker</h2>
+
+    <div class="input-wrap">
+      <input type="password" id="pw" placeholder="Enter your password..." />
+      <button class="eye-btn" id="eyeBtn" onclick="toggleVisibility()">
+        <img src="images/show.png" id="eyeIcon" alt="Show password" />
+      </button>
+    </div>
+
+    <div class="bars">
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
+      <div class="bar" id="bar4"></div>
+    </div>
+
+    <div class="strength-label" id="strengthLabel">—</div>
+
+    <ul class="tips" id="tips">
+      <li id="tip-length">Use at least 8 characters</li>
+      <li id="tip-upper">Add uppercase letters (A–Z)</li>
+      <li id="tip-lower">Add lowercase letters (a–z)</li>
+      <li id="tip-number">Include numbers (0–9)</li>
+      <li id="tip-special">Use special characters (!@#$%…)</li>
+    </ul>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
